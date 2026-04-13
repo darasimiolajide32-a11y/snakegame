@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Snake Deluxe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="controls">
+  <button onclick="startGame()">Start</button>
+  <button onclick="pauseGame()">Pause</button>
+  <button onclick="resumeGame()">Continue</button>
+
+  <select id="difficulty">
+    <option value="150">Easy</option>
+    <option value="100">Medium</option>
+    <option value="70">Hard</option>
+  </select>
+
+  <input type="color" id="snakeColor" value="#00ffcc">
+  <input type="color" id="bgColor" value="#111111">
+</div>
+
+<h2 id="levelText">Level 1</h2>
+<h3>Score: <span id="score">0</span></h3>
+
+<canvas id="gameCanvas" width="400" height="400"></canvas>
+
+<audio id="eatSound" src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-bonus-229.wav"></audio>
+<audio id="bombSound" src="https://assets.mixkit.co/sfx/preview/mixkit-explosion-1688.wav"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
